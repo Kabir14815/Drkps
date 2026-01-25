@@ -1,4 +1,4 @@
-import { Heart, Activity, Zap, Wind, Stethoscope, Thermometer, Bone, Brain, Droplets, ArrowRight } from 'lucide-react'
+import { Heart, Activity, Zap, Wind, Stethoscope, Thermometer, Bone, Brain, ArrowRight } from 'lucide-react'
 import './Services.css'
 const services = [
   {
