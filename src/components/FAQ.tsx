@@ -5,31 +5,31 @@ import './FAQ.css'
 const faqs = [
   {
     question: "What are the clinic timings?",
-    answer: "Dr. KPS Clinic is open from 9:00 AM to 9:00 PM, Monday to Sunday. We provide continuous medical care throughout the week."
+    answer: "Dr. Gera's Heart and Diabetes Care Centre is open from 5:30 PM to 8:00 PM, Monday to Saturday. The clinic is closed on Sundays."
   },
   {
     question: "Do I need a prior appointment?",
-    answer: "While we do accept walk-ins, we recommend booking an appointment to minimize your wait time. You can call us at 82880 13769 to schedule a visit."
+    answer: "While we do accept walk-ins, we recommend booking an appointment to minimize your wait time. You can call us at 90410 02165 to schedule a visit."
   },
   {
     question: "What medical services do you provide?",
-    answer: "We specialize in treating Hypertension, Diabetes, Thyroid, Asthma, and Heart-related diseases. We also provide General Physician services, Pediatric care, and Laboratory testing."
+    answer: "We specialize in cardiac care, diabetes management, hypertension, thyroid disorders, respiratory care, gastric and liver ailments, fever treatment, and general physician consultations."
   },
   {
-    question: "Is there emergency medical care available?",
-    answer: "Yes, we provide emergency medical services during our operating hours. For critical emergencies, please call our emergency number 82880 13769 immediately."
+    question: "Who is the doctor at the clinic?",
+    answer: "Dr. Rajesh Gera (MBBS, MD - General Medicine) is the consulting physician with over 30 years of experience in internal medicine, diabetes, and non-invasive cardiology."
   },
   {
-    question: "Do you offer home visits for elderly patients?",
-    answer: "Yes, depending on the severity and availability, we do provide home consultation services for elderly patients in the Kharar region. Please contact the clinic for more details."
+    question: "What is the consultation fee?",
+    answer: "The consultation fee is ₹500. For the latest fee details and availability, please call the clinic at 90410 02165."
   },
   {
-    question: "Are health checkup packages available?",
-    answer: "Absolutely! We offer various comprehensive health checkup packages inclusive of blood tests, ECG, and physician consultation at subsidized rates."
+    question: "Can I visit for uncontrolled blood pressure, sugar, or thyroid?",
+    answer: "Absolutely! You can visit our clinic for irregular blood pressure, uncontrolled sugar, or thyroid conditions. Dr. Gera will provide the necessary treatment and guidance."
   },
-   {
-    question: "Can I visit Clinic for irregular bp, sugar or thyroid  is not control?",
-    answer: "Absolutely! You can visit our clinic for irregular blood pressure, sugar, or thyroid conditions that are not under control. Our experienced doctors will provide the necessary treatment and guidance."
+  {
+    question: "Where is the clinic located?",
+    answer: "We are located at House No 939, Near Ayush Dispensary, Sector 9, Panchkula, Haryana - 134109."
   }
 ]
 
@@ -83,8 +83,8 @@ const FAQ = () => {
               <HelpCircle size={40} />
             </div>
             <h3>Still have questions?</h3>
-            <p>Can't find the answer you're looking for? Please chat to our friendly team.</p>
-            <a href="https://wa.me/918288013769" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get In Touch</a>
+            <p>Can't find the answer you're looking for? Please call our friendly team.</p>
+            <a href="https://wa.me/919041002165" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get In Touch</a>
           </div>
         </div>
       </div>

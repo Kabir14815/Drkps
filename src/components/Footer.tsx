@@ -15,14 +15,15 @@ const Footer = () => {
           {/* About */}
           <div className="footer-col footer-about">
             <div className="footer-logo">
-              <span>Dr. KPS Clinic</span>
+              <span>Dr. Gera's Heart & Diabetes Care</span>
             </div>
             <p>
-              Dr. KPS Clinic: Providing world-class healthcare with compassion and expertise
-              in Kharar. Your health is our priority, always.
+              Expert heart and diabetes care in Panchkula by Dr. Rajesh Gera.
+              Compassionate treatment for hypertension, diabetes, thyroid,
+              and cardiac conditions with a personal touch.
             </p>
             <div className="social-links">
-              <a href="#" aria-label="Facebook"><Facebook size={18} /></a>
+              <a href="https://www.facebook.com/Dr.RajeshGera" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={18} /></a>
               <a href="#" aria-label="Twitter"><Twitter size={18} /></a>
               <a href="#" aria-label="Instagram"><Instagram size={18} /></a>
             </div>
@@ -33,21 +34,21 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/about">About Us</Link></li>
-              <li><a href="/#services">Our Departments</a></li>
+              <li><a href="/#services">Our Services</a></li>
               <li><a href="/#contact">Contact Us</a></li>
             </ul>
           </div>
 
-          {/* Departments */}
+          {/* Services */}
           <div className="footer-col">
-            <h4>Departments</h4>
+            <h4>Services</h4>
             <ul>
-              <li><a href="#services">Heart Related Diseases</a></li>
+              <li><a href="#services">Cardiac Care</a></li>
+              <li><a href="#services">Diabetes Management</a></li>
               <li><a href="#services">Hypertension</a></li>
-              <li><a href="#services">Diabetes</a></li>
-              <li><a href="#services">Thyroid</a></li>
-              <li><a href="#services">Gastric</a></li>
-              <li><a href="#services">Fever</a></li>
+              <li><a href="#services">Thyroid Disorders</a></li>
+              <li><a href="#services">Respiratory Care</a></li>
+              <li><a href="#services">Gastric & Liver Care</a></li>
             </ul>
           </div>
 
@@ -56,22 +57,22 @@ const Footer = () => {
             <h4>Contact Us</h4>
             <div className="contact-item">
               <MapPin size={18} />
-              <span>#1037, Sector 11, Civil Hospital Road, Kharar, Punjab - 140301</span>
+              <span>House No 939, Near Ayush Dispensary, Sector 9, Panchkula, Haryana - 134109</span>
             </div>
             <div className="contact-item">
               <Phone size={18} />
               <div>
-                <a href="tel:08288013769">082880 13769</a>
-                <span className="emergency">9 AM - 9 PM Available</span>
+                <a href="tel:9041002165">90410 02165</a>
+                <span className="emergency">Mon-Sat: 5:30 PM - 8:00 PM</span>
               </div>
             </div>
             <div className="contact-item">
               <Mail size={18} />
-              <a href="mailto:info@kpshospital.com">info@kpshospital.com</a>
+              <a href="mailto:drrajeshgera@gmail.com">drrajeshgera@gmail.com</a>
             </div>
             <div className="contact-item">
               <Clock size={18} />
-              <span>24/7 Emergency Services</span>
+              <span>Evening OPD: Mon-Sat</span>
             </div>
           </div>
         </div>
@@ -79,7 +80,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>&copy; {new Date().getFullYear()} Dr. KPS Clinic. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Dr. Gera's Heart and Diabetes Care Centre. All rights reserved.</p>
             <div className="footer-links">
               <a href="#">Privacy Policy</a>
               <a href="#">Terms of Service</a>

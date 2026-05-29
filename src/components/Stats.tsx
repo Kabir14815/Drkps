@@ -5,31 +5,31 @@ import './Stats.css'
 const stats = [
   {
     icon: Users,
-    number: 500,
+    number: 1000,
     suffix: '+',
     label: 'Happy Patients',
-    description: 'Trusted by thousands'
+    description: 'Trusted across Panchkula'
   },
   {
     icon: Stethoscope,
-    number: 2,
+    number: 42,
     suffix: '+',
-    label: 'Expert Doctors',
-    description: 'Across all specialties'
+    label: 'Treatments Offered',
+    description: 'Comprehensive care'
   },
   {
     icon: Award,
-    number:15,
+    number: 30,
     suffix: '+',
     label: 'Years Experience',
     description: 'Of medical excellence'
   },
   {
     icon: Heart,
-    number: 98,
+    number: 94,
     suffix: '%',
-    label: 'Success Rate',
-    description: 'Patient satisfaction'
+    label: 'Patient Satisfaction',
+    description: 'Recommended by patients'
   }
 ]
 
@@ -89,8 +89,8 @@ const Stats = () => {
       <div className="container">
         <div className="stats-content">
           <div className="stats-header">
-            <h2>Trusted by Thousands, Recognized for Excellence</h2>
-            <p>Our numbers speak for themselves. We're proud of the impact we've made in healthcare.</p>
+            <h2>Trusted by Patients, Recognized for Excellence</h2>
+            <p>Our commitment to heart and diabetes care speaks through the lives we've touched.</p>
           </div>
 
           <div className="stats-grid">

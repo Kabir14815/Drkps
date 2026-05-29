@@ -4,28 +4,36 @@ import './Testimonials.css'
 
 const testimonials = [
   {
-    name: 'Sardar Gurpreet Singh',
-    location: 'Kharar',
-    rating: 5,
-    avatar: '👨‍🦳',
-    text: 'Dr. Karanpartap is an excellent physician. I was struggling with uncontrolled BP for years, but his treatment plan brought it back to normal. The clinic atmosphere is very professional.',
-    treatment: 'Hypertension Management'
-  },
-  {
-    name: 'Anita Verma',
-    location: 'Mohali',
+    name: 'Simran',
+    location: 'Panchkula',
     rating: 5,
     avatar: '👩',
-    text: 'Best clinic for family healthcare in Kharar. We\'ve been seeing Dr. KPS for all our medical needs for 5 years now. Very compassionate and explains everything clearly.',
-    treatment: 'General Wellness'
+    text: 'Dr. Gera has been of tremendous value to us. He saved my father\'s life when we brought him in a critical condition of renal damage and seizures. His commitment and humanitarian touch is commendable. One of the finest doctors I have met.',
+    treatment: 'Critical Care'
   },
   {
-    name: 'Rajinder Pal',
-    location: 'Chandigarh',
+    name: 'Anil Kumar Khosla',
+    location: 'Panchkula',
+    rating: 5,
+    avatar: '👨‍🦳',
+    text: 'The doctor went through the whole history of my disease with great patience since I am a patient since 1982. After thorough examination he prescribed medicine and asked for tests. We talked in a very cordial atmosphere to my entire satisfaction.',
+    treatment: 'General Physician'
+  },
+  {
+    name: 'Atharv',
+    location: 'Panchkula',
     rating: 5,
     avatar: '👨',
-    text: 'The thyroid treatment I received here was life-changing. I feel much more energetic now. Highly recommend Dr. KPS for his expertise and patient care.',
-    treatment: 'Thyroid Treatment'
+    text: 'Dr. Rajesh Gera is not only a wonderful doctor but also a very calm and empathetic human being. He listened to and answered all questions patiently and explained the health issue and treatment in detail. Really thankful for the care and support.',
+    treatment: 'Respiratory Care'
+  },
+  {
+    name: 'Sandeep Singh',
+    location: 'Panchkula',
+    rating: 5,
+    avatar: '👨',
+    text: 'Dr. Gera is very supportive and provides excellent guidance. He handled our patient very well during diabetes complications and pneumonia. Thanks for the mediation and treatment. Dr. Gera is doing a great job.',
+    treatment: 'Diabetes Management'
   }
 ]
 

@@ -4,12 +4,12 @@ import { Phone, Menu, X, ChevronDown, Clock, MapPin } from 'lucide-react'
 import './Header.css'
 
 const departments = [
-  { name: 'Heart Related Diseases', icon: '❤️' },
+  { name: 'Cardiac Care', icon: '❤️' },
+  { name: 'Diabetes Management', icon: '🩸' },
   { name: 'Hypertension', icon: '📈' },
-  { name: 'Diabetes', icon: '🩸' },
-  { name: 'Thyroid', icon: '⚡' },
-  { name: 'Gastric', icon: '🩺' },
-  { name: 'Fever', icon: '🌡️' },
+  { name: 'Thyroid Disorders', icon: '⚡' },
+  { name: 'Respiratory Care', icon: '🫁' },
+  { name: 'Gastric & Liver Care', icon: '🩺' },
 ]
 
 const Header = () => {
@@ -53,23 +53,17 @@ const Header = () => {
           <div className="top-bar-left">
             <div className="top-bar-item">
               <Clock size={14} />
-              <span>Open 9 AM - 9 PM (Mon-Sun) - Emergency Services Available</span>
+              <span>Mon-Sat: 5:30 PM - 8:00 PM</span>
             </div>
             <div className="top-bar-item">
               <MapPin size={14} />
-              <span>#1037, Sector 11, Civil Hospital Road, Kharar</span>
+              <span>House No 939, Sector 9, Near Ayush Dispensary, Panchkula</span>
             </div>
           </div>
           <div className="top-bar-right">
-            <a href="tel:08288013769" className="top-bar-phone">
+            <a href="tel:9041002165" className="top-bar-phone">
               <Phone size={14} />
-              <span>82880 13769</span>
-            </a>
-          </div>
-          <div className="top-bar-right">
-            <a href="tel:08288013769" className="top-bar-phone">
-              <Phone size={14} />
-              <span>88475 62157</span>
+              <span>90410 02165</span>
             </a>
           </div>
         </div>
@@ -81,11 +75,11 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="logo" onClick={() => scrollToSection('hero')}>
             <div className="logo-icon">
-              <img src="/favicon.jpeg" alt="Dr. KPS Clinic Logo" style={{ width: '40px', height: '40px', borderRadius: '10px', objectFit: 'cover' }} />
+              <img src="/favicon.jpeg" alt="Dr. Gera's Heart and Diabetes Care Centre Logo" style={{ width: '40px', height: '40px', borderRadius: '10px', objectFit: 'cover' }} />
             </div>
             <div className="logo-text">
-              <span className="logo-name">Dr. KPS</span>
-              <span className="logo-tagline">Clinic</span>
+              <span className="logo-name">Dr. Gera's</span>
+              <span className="logo-tagline">Heart & Diabetes Care</span>
             </div>
           </Link>
 
@@ -93,14 +87,14 @@ const Header = () => {
           <nav className="nav-desktop" aria-label="Main Navigation">
             <ul className="nav-list">
               <li><Link to="/" onClick={(e) => { e.preventDefault(); scrollToSection('hero') }} aria-label="Home">Home</Link></li>
-              <li><Link to="/about" aria-label="About KPS Hospital">About Us</Link></li>
+              <li><Link to="/about" aria-label="About Dr. Gera's Clinic">About Us</Link></li>
               <li
                 className="nav-dropdown"
                 onMouseEnter={() => setIsDeptDropdownOpen(true)}
                 onMouseLeave={() => setIsDeptDropdownOpen(false)}
               >
                 <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services') }} aria-expanded={isDeptDropdownOpen} aria-haspopup="true">
-                  Departments <ChevronDown size={16} />
+                  Services <ChevronDown size={16} />
                 </a>
                 <div className={`dropdown-menu ${isDeptDropdownOpen ? 'open' : ''}`}>
                   <div className="dropdown-grid">
@@ -113,7 +107,7 @@ const Header = () => {
                   </div>
                 </div>
               </li>
-              <li><a href="#doctors" onClick={(e) => { e.preventDefault(); scrollToSection('doctors') }}>Our Doctors</a></li>
+              <li><a href="#doctors" onClick={(e) => { e.preventDefault(); scrollToSection('doctors') }}>Our Doctor</a></li>
               <li><a href="#testimonials" onClick={(e) => { e.preventDefault(); scrollToSection('testimonials') }}>Reviews</a></li>
               <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq') }}>FAQ</a></li>
             </ul>
@@ -121,9 +115,9 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="header-actions">
-            <a href="tel:08288013769" className="btn btn-emergency btn-sm">
+            <a href="tel:9041002165" className="btn btn-emergency btn-sm">
               <Phone size={16} />
-              <span>Emergency</span>
+              <span>Call Now</span>
             </a>
           </div>
 
@@ -144,16 +138,16 @@ const Header = () => {
           <ul>
             <li><Link to="/" onClick={() => scrollToSection('hero')}>Home</Link></li>
             <li><Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link></li>
-            <li><a href="#services" onClick={() => scrollToSection('services')}>Departments</a></li>
-            <li><a href="#doctors" onClick={() => scrollToSection('doctors')}>Our Doctors</a></li>
+            <li><a href="#services" onClick={() => scrollToSection('services')}>Services</a></li>
+            <li><a href="#doctors" onClick={() => scrollToSection('doctors')}>Our Doctor</a></li>
             <li><a href="#testimonials" onClick={() => scrollToSection('testimonials')}>Reviews</a></li>
             <li><a href="#faq" onClick={() => scrollToSection('faq')}>FAQ</a></li>
             <li><a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a></li>
           </ul>
           <div className="mobile-actions">
-            <a href="tel:08288013769" className="btn btn-emergency">
+            <a href="tel:9041002165" className="btn btn-emergency">
               <Phone size={18} />
-              <span>Emergency: Call Now</span>
+              <span>Call: 90410 02165</span>
             </a>
           </div>
         </nav>
