@@ -2,10 +2,10 @@ import { Award, Users, Target, Lightbulb, CheckCircle } from 'lucide-react'
 import './About.css'
 
 const achievements = [
-  { icon: Award, text: 'MD General Medicine' },
-  { icon: CheckCircle, text: 'API Member' },
-  { icon: Award, text: '30+ Years Experience' },
-  { icon: CheckCircle, text: 'Non-Invasive Cardiology' }
+  { icon: Award, text: 'NABH Accredited' },
+  { icon: CheckCircle, text: 'ISO 9001:2015 Certified' },
+  { icon: Award, text: 'JCI Standards' },
+  { icon: CheckCircle, text: 'Green Hospital Award' }
 ]
 
 const About = () => {
@@ -17,12 +17,12 @@ const About = () => {
           <div className="about-visual">
             <div className="about-image-wrapper">
               <div className="about-image-main">
-                <img src="/images/clinic/clinic-building.jpg" alt="Dr. Gera's Heart and Diabetes Care Centre in Panchkula" className="about-img" />
+                <img src="/images/clinic/clinic-building.jpg" alt="Real exterior of Dr. KPS Clinic in Kharar" className="about-img" />
               </div>
 
               {/* Experience Badge */}
               <div className="about-badge">
-                <span className="badge-number">30+</span>
+                <span className="badge-number">15+</span>
                 <span className="badge-text">Years of Excellence</span>
               </div>
             </div>
@@ -46,11 +46,11 @@ const About = () => {
             </span>
 
             <h2 className="about-title">
-              Expert <span className="text-gradient">Heart & Diabetes Care</span> with a Personal Touch
+              A Legacy of <span className="text-gradient">Compassionate Care</span> & Medical Excellence
             </h2>
 
             <p className="about-intro">
-              Led by **Dr. Rajesh Gera** (MBBS, MD - General Medicine), our clinic specializes in diabetes management, non-invasive cardiology, hypertension, thyroid, respiratory, and gastric care. With over 30 years of experience, Dr. Gera provides compassionate, patient-centered treatment for every individual.
+              Led by **Dr. Karanpartap Singh** (MBBS, MD, DNB Medicine), our clinic is a testament to 15+ years of medical excellence. We combine world-class expertise in physician care with genuine compassion for every patient in the region.
             </p>
 
             <div className="about-features">
@@ -60,8 +60,8 @@ const About = () => {
                 </div>
                 <div>
                   <h4>Our Mission</h4>
-                  <p>To provide accessible, expert medical care for heart and diabetes patients,
-                    helping them live healthier lives through personalized treatment plans.</p>
+                  <p>To provide accessible, affordable, and exceptional healthcare
+                    services that improve the quality of life for our community.</p>
                 </div>
               </div>
 
@@ -71,8 +71,8 @@ const About = () => {
                 </div>
                 <div>
                   <h4>Our Vision</h4>
-                  <p>To be the most trusted heart and diabetes care centre in Panchkula,
-                    recognized for clinical excellence and compassionate patient care.</p>
+                  <p>To be the most trusted healthcare destination, recognized for
+                    clinical excellence, innovation, and patient-centered care.</p>
                 </div>
               </div>
             </div>
@@ -84,8 +84,8 @@ const About = () => {
                 <span className="value-tag">Compassion</span>
                 <span className="value-tag">Excellence</span>
                 <span className="value-tag">Integrity</span>
-                <span className="value-tag">Patient First</span>
-                <span className="value-tag">Trust</span>
+                <span className="value-tag">Innovation</span>
+                <span className="value-tag">Teamwork</span>
               </div>
             </div>
 

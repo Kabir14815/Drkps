@@ -3,17 +3,17 @@ import { Camera, X } from 'lucide-react'
 import './Gallery.css'
 
 const galleryImages = [
-  { id: 1, title: 'Clinic Exterior', category: 'facility', image: '/images/gallery/exterior.png' },
-  { id: 2, title: 'Consultation Room', category: 'facility', image: '/images/gallery/consultation.png' },
-  { id: 3, title: 'Waiting Area', category: 'facility', image: '/images/gallery/reception.png' },
-  { id: 4, title: 'Diagnostic Area', category: 'facility', image: '/images/gallery/lab.png' },
-  { id: 5, title: 'Patient Care', category: 'facility', image: '/images/gallery/room.png' },
-  { id: 6, title: 'Clinic Interior', category: 'facility', image: '/images/about.png' },
-  { id: 7, title: 'Heart & Diabetes Care', category: 'facility', image: '/images/clinic/clinic-building.jpg' },
-  { id: 8, title: 'Medical Consultation', category: 'facility', image: '/images/gallery/consultation.png' }
+  { id: 1, title: 'Hospital Reception', category: 'facility', image: '/images/gallery/reception.png' },
+  { id: 2, title: 'Operation Theatre', category: 'facility', image: '/images/gallery/ot.png' },
+  { id: 3, title: 'Patient Room', category: 'rooms', image: '/images/gallery/room.png' },
+  { id: 4, title: 'ICU', category: 'facility', image: '/images/gallery/icu.png' },
+  { id: 5, title: 'Diagnostic Lab', category: 'facility', image: '/images/gallery/lab.png' },
+  { id: 6, title: 'Premium Suite', category: 'rooms', image: '/images/gallery/room.png' },
+  { id: 7, title: 'Hospital Exterior', category: 'facility', image: '/images/hero.png' },
+  { id: 8, title: 'Hospital Interior', category: 'facility', image: '/images/about.png' }
 ]
 
-const categories = ['All', 'facility']
+const categories = ['All', 'facility', 'rooms', 'amenities']
 
 const Gallery = () => {
   const [activeFilter, setActiveFilter] = useState('All')
@@ -30,12 +30,12 @@ const Gallery = () => {
         <div className="section-header">
           <span className="section-badge">
             <Camera size={16} />
-            Clinic Gallery
+            Virtual Tour
           </span>
-          <h2 className="section-title">Explore Our Clinic</h2>
+          <h2 className="section-title">Explore Our World-Class Facilities</h2>
           <p className="section-description">
-            Take a look at Dr. Gera's Heart and Diabetes Care Centre —
-            a welcoming space designed for your comfort and well-being.
+            Take a virtual tour of our state-of-the-art hospital featuring
+            modern amenities and premium patient care facilities.
           </p>
         </div>
 

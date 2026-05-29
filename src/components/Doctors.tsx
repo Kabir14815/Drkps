@@ -16,22 +16,37 @@ interface Doctor {
 
 const doctors: Doctor[] = [
   {
-    name: 'Dr. Rajesh Gera',
-    specialty: 'MD - General Medicine, MBBS',
-    experience: '30+ Years Experience',
-    rating: 4.9,
-    image: '/images/doctors/dr-rajesh-gera.png',
-    education: 'Consultant Physician & Internal Medicine Specialist',
+    name: 'Dr. Karanpartap Singh',
+    specialty: 'MBBS, MD, DNB (Medicine)',
+    experience: '15+ Years Experience',
+    rating: 5.0,
+    image: '/images/doctors/dr-karanpratap.png',
+    education: 'Senior Physician & Multi-Specialist',
     qualifications: [
-      'MBBS - H.P. University, Shimla',
-      'MD - General Medicine, PGIMS Rohtak',
-      'Member - Association of Physicians of India (API)'
+      'MBBS, MD, DNB in Medicine',
+      'BCME from CMC Ludhiana',
+      'BCBR from ICMR, New Delhi'
     ],
     achievements: [
-      'Expert in Diabetes Management & Non-Invasive Cardiology',
-      'Specialist in Hypertension, Thyroid, Respiratory & Gastric Disorders',
-      '94% Patient Satisfaction Rating on Practo',
-      'Trusted by patients across Panchkula for over three decades'
+      'Speaker & Chairperson at National MEDICON Conferences',
+      'Active Researcher in National & International Journals',
+      'Expert in BP, Diabetes, Thyroid, Asthma & Heart Related Diseases'
+    ],
+    available: true
+  },
+  {
+    name: 'Dr. Simran Kaur',
+    specialty: 'MBBS',
+    experience: '4+ Years Experience',
+    rating: 5.0,
+    image: '/images/doctors/dr-simran.png',
+    education: 'Comprehensive Family Medicine and Child Healthcare',
+    qualifications: ['MBBS'],
+    achievements: [
+      'Attended workshop - ACLS, Early Management of Trauma, IUCD insertion, Breast examination and Normal delivery.',
+      'Expert in Pediatric Care',
+      'Family Medicine Specialist',
+      'Preventive Healthcare Expert'
     ],
     available: true
   }
@@ -54,12 +69,12 @@ const Doctors = () => {
         <div className="section-header">
           <span className="section-badge">
             <Award size={16} />
-            Our Expert
+            Our Experts
           </span>
-          <h2 className="section-title">Meet Dr. Rajesh Gera</h2>
+          <h2 className="section-title">Expert Doctors at Dr. KPS Clinic</h2>
           <p className="section-description">
-            Dr. Rajesh Gera is a highly qualified general physician with over 30 years
-            of experience specializing in heart care, diabetes management, and internal medicine.
+            Our team of highly qualified and experienced specialists at Dr. KPS Clinic are
+            dedicated to providing you with the best medical care and treatment.
           </p>
         </div>
 
@@ -86,7 +101,7 @@ const Doctors = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="doctor-image">
-                  <img src={doctor.image} alt={`${doctor.name} - ${doctor.specialty} at Dr. Gera's Clinic`} className="doctor-avatar-img" />
+                  <img src={doctor.image} alt={`${doctor.name} - ${doctor.specialty} Specialist at KPS Hospital`} className="doctor-avatar-img" />
                   {doctor.available && <span className="available-badge">Available Today</span>}
                 </div>
 
@@ -118,7 +133,7 @@ const Doctors = () => {
                     <div className="details-section">
                       <div className="details-label">
                         <Award size={16} />
-                        <span>Specializations</span>
+                        <span>Highlights & Research</span>
                       </div>
                       <ul className="details-list">
                         {doctor.achievements?.map((a, i) => (
@@ -138,7 +153,7 @@ const Doctors = () => {
 
         {/* View All */}
         <div className="doctors-cta">
-          <a href="tel:9041002165" className="btn btn-secondary">Book Consultation</a>
+          <button className="btn btn-secondary">Book Consultation</button>
         </div>
       </div>
     </section>

@@ -6,10 +6,10 @@ import Stats from '../components/Stats'
 import './AboutPage.css'
 
 const achievements = [
-  { icon: Award, text: 'MD General Medicine' },
-  { icon: CheckCircle, text: 'API Member' },
+  { icon: Award, text: 'NABH Accredited' },
+  { icon: CheckCircle, text: 'ISO Certified' },
   { icon: Heart, text: 'Patient First' },
-  { icon: Shield, text: 'Trusted Care' }
+  { icon: Shield, text: 'Safety First' }
 ]
 
 const AboutPage = () => {
@@ -23,7 +23,7 @@ const AboutPage = () => {
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0); // Ensure scroll to top on mount
     return () => observer.disconnect();
   }, []);
 
@@ -38,14 +38,14 @@ const AboutPage = () => {
             <div className="hero-content animate-fadeInUp">
               <div className="hero-badge silver">
                 <Sparkles size={16} className="sparkle" />
-                <span>30+ Years of Medical Excellence</span>
+                <span>Established Since 1998</span>
               </div>
               <h1>
-                Heart & Diabetes Care with a <br />
+                Healthcare with a <br />
                 <span className="text-gradient">Personal Touch</span>
               </h1>
               <p className="hero-subtitle">
-                At Dr. Gera's Heart and Diabetes Care Centre, we combine expert medical knowledge
+                At KPS Hospital, we combine world-class medical innovation
                 with the warmth of human compassion to deliver exceptional care.
               </p>
             </div>
@@ -57,10 +57,10 @@ const AboutPage = () => {
           <div className="container">
             <div className="story-grid">
               <div className="story-image-container animate-on-scroll">
-                <img src="/images/about.png" alt="Dr. Gera's Clinic Interior" />
+                <img src="/images/about.png" alt="Hospital Architecture" />
                 <div className="overlay-badge">
                   <div className="badge-content">
-                    <span className="count">30+</span>
+                    <span className="count">15+</span>
                     <span className="label">Years of <br /> Excellence</span>
                   </div>
                 </div>
@@ -68,17 +68,17 @@ const AboutPage = () => {
               <div className="story-text animate-on-scroll">
                 <span className="section-badge teal">
                   <Activity size={16} />
-                  Our Journey
+                  Out Patient Journey
                 </span>
                 <h2 className="section-title">A Legacy Written in <br /><span className="text-gradient">Trust & Care</span></h2>
                 <p>
-                  Founded by **Dr. Rajesh Gera** (MBBS, MD - General Medicine), our clinic represents a legacy of medical excellence and compassionate service spanning over 30 years in Panchkula.
+                  Founded by the visionary **Dr. Karanpartap Singh** (MBBS, MD, DNB Medicine), our clinic represents a legacy of medical excellence and compassionate service spanning over 15 years.
                 </p>
                 <p>
-                  A distinguished physician, Dr. Gera completed his MBBS from H.P. University, Shimla and MD in General Medicine from PGIMS, Rohtak. He is an active member of the Association of Physicians of India (API) and has dedicated his career to diabetes management and non-invasive cardiology.
+                  A pioneer in healthcare, Dr. Singh brings specialized expertise from prestigious institutions like **CMC Ludhiana** (BCME) and **ICMR, New Delhi** (BCBR). His commitment to advancing medicine is reflected in his active role as a speaker and chairperson at national conferences like **MEDICON**, and his prolific research contributions to international medical journals.
                 </p>
                 <p>
-                  Dr. Gera's particular interest lies in diabetes and its complications, hypertension, thyroid disorders, respiratory ailments, and cardiac care. His clinic in Sector 9, Panchkula has become a trusted destination for patients seeking expert, personalized medical attention.
+                  Under his leadership, KPS Hospital has evolved from a humble clinic into a regional healthcare beacon, dedicated to providing expert care for BP, Diabetes, Thyroid, and Heart-related diseases with a personal touch.
                 </p>
                 <div className="achievements-grid">
                   {achievements.map((item, index) => (
@@ -106,15 +106,15 @@ const AboutPage = () => {
                 <div className="value-icon-wrapper">
                   <Target size={32} />
                 </div>
-                <h3>Our Mission</h3>
-                <p>To provide accessible, expert medical care for heart and diabetes patients, helping them live healthier lives through personalized treatment and compassionate service.</p>
+                <h3>Dedicated Mission</h3>
+                <p>To redefine healthcare standards by making professional medical services accessible to every stratum of society with uncompromising quality.</p>
               </div>
               <div className="glass-card">
                 <div className="value-icon-wrapper">
                   <Lightbulb size={32} />
                 </div>
-                <h3>Our Vision</h3>
-                <p>To be the most trusted heart and diabetes care centre in Panchkula, recognized for clinical excellence, patient satisfaction, and a commitment to community health.</p>
+                <h3>Vision 2030</h3>
+                <p>Elevating KPS Hospital into a premier global healthcare institution through digitized health systems and robotic surgical excellence.</p>
               </div>
             </div>
           </div>
@@ -131,8 +131,8 @@ const AboutPage = () => {
               {[
                 { title: 'Compassion', text: 'Empathy at the heart of care.' },
                 { title: 'Excellence', text: 'Striving for perfection always.' },
-                { title: 'Integrity', text: 'Honesty in every heartbeat.' },
-                { title: 'Trust', text: 'Building lasting patient relationships.' }
+                { title: 'Innovation', text: 'Future-ready medical science.' },
+                { title: 'Integrity', text: 'Honesty in every heart beat.' }
               ].map((v, i) => (
                 <div key={i} className="glass-card value-item animate-on-scroll">
                   <div className="value-icon-wrapper">

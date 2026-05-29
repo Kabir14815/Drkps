@@ -1,60 +1,59 @@
-import { Heart, Activity, Zap, Wind, Stethoscope, Thermometer, Brain, Droplets, ArrowRight } from 'lucide-react'
+import { Heart, Activity, Zap, Wind, Stethoscope, Thermometer, Bone, Brain, ArrowRight } from 'lucide-react'
 import './Services.css'
-
 const services = [
   {
     icon: Heart,
-    name: 'Cardiac Care',
-    description: 'Non-invasive cardiology for heart failure, cardiac disorders, and comprehensive heart health management.',
+    name: 'Heart Related Diseases',
+    description: 'Expert consultation for hypertension, hypertension, and various heart conditions with advanced cardiac diagnostics.',
     color: '#ef4444',
     bgColor: '#fef2f2'
   },
   {
-    icon: Droplets,
-    name: 'Diabetes Management',
-    description: 'Expert Type 2 diabetes treatment, complication management, and personalized diabetes care plans.',
+    icon: Activity,
+    name: 'Hypertension & Diabetes',
+    description: 'Specialized management of hypertension and diabetes to prevent complications and maintain long-term health.',
     color: '#8b5cf6',
     bgColor: '#f5f3ff'
   },
   {
-    icon: Activity,
-    name: 'Hypertension Treatment',
-    description: 'Specialized management of high blood pressure to prevent complications and maintain long-term health.',
+    icon: Zap,
+    name: 'Thyroid & Hormonal Care',
+    description: 'Diagnosis and treatment of thyroid disorders (hypo/hyperthyroidism) and other hormonal imbalances.',
     color: '#f59e0b',
     bgColor: '#fffbeb'
   },
   {
-    icon: Zap,
-    name: 'Thyroid Disorders',
-    description: 'Diagnosis and treatment of thyroid disorders and hormonal imbalances for all age groups.',
+    icon: Wind,
+    name: 'Asthma & Breathing Issues',
+    description: 'Comprehensive respiratory care for asthma, allergies, and chronic breathing difficulties for all age groups.',
     color: '#10b981',
     bgColor: '#ecfdf5'
   },
   {
-    icon: Wind,
-    name: 'Respiratory Care',
-    description: 'Treatment for COPD, bronchial asthma, respiratory tract infections, and breathing difficulties.',
-    color: '#06b6d4',
-    bgColor: '#ecfeff'
-  },
-  {
     icon: Stethoscope,
     name: 'Gastric & Liver Care',
-    description: 'Expert treatment for gastritis, gastroenteritis, liver ailments, and digestive disorders.',
+    description: 'Expert treatment for digestive issues, acid reflux, stomach infections, and various liver-related conditions.',
     color: '#ec4899',
     bgColor: '#fdf2f8'
   },
   {
     icon: Thermometer,
     name: 'Fever & Infections',
-    description: 'Treatment for viral fever, dengue, malaria, and seasonal infections for a quick recovery.',
+    description: 'Accurate diagnosis and effective treatment of viral, bacterial, and seasonal fevers for a quick recovery.',
+    color: '#06b6d4',
+    bgColor: '#ecfeff'
+  },
+  {
+    icon: Bone,
+    name: 'Joint Pains & Ortho',
+    description: 'Specialized care for joint pains, arthritis, and other orthopedic issues to restore mobility and comfort.',
     color: '#3b82f6',
     bgColor: '#eff6ff'
   },
   {
     icon: Brain,
     name: 'Headache & Neurology',
-    description: 'Professional management of chronic headaches, migraines, and neurological health concerns.',
+    description: 'Professional management of chronic headaches, migraines, and various neurological health concerns.',
     color: '#8b5cf6',
     bgColor: '#f5f3ff'
   }
@@ -70,10 +69,10 @@ const Services = () => {
             <Stethoscope size={16} />
             Our Specialties
           </span>
-          <h2 className="section-title">Specialized Care at Dr. Gera's Clinic</h2>
+          <h2 className="section-title">Specialized Care at Dr. KPS Clinic</h2>
           <p className="section-description">
-            Dr. Gera's Heart and Diabetes Care Centre provides comprehensive medical services
-            with a focus on heart diseases, diabetes, and general physician care in Panchkula.
+            Dr. KPS Clinic houses specialized medical expertise staffed by experienced doctors
+            dedicated to providing comprehensive healthcare in Kharar.
           </p>
         </div>
 
@@ -93,8 +92,8 @@ const Services = () => {
               </div>
               <h3 className="service-name">{service.name}</h3>
               <p className="service-description">{service.description}</p>
-              <a href="#contact" className="service-link">
-                Book Consultation
+              <a href="#" className="service-link">
+                Learn More
                 <ArrowRight size={16} />
               </a>
             </div>

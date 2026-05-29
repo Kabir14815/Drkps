@@ -31,10 +31,10 @@ const Contact = () => {
             <MapPin size={16} />
             Contact Us
           </span>
-          <h2 className="section-title">Contact Dr. Gera's Clinic</h2>
+          <h2 className="section-title">Contact KPS Clinic</h2>
           <p className="section-description">
-            Have questions or need to book an appointment? Reach out to us
-            through any of the following channels. We are here to help.
+            Have questions or need assistance? Reach out to KPS Clinic
+            through any of the following channels. We are here to help 24/7.
           </p>
         </div>
 
@@ -46,17 +46,17 @@ const Contact = () => {
                 <MapPin size={24} />
               </div>
               <h4>Our Location</h4>
-              <p>House No 939, Sector 9</p>
-              <p>Near Ayush Dispensary, Panchkula - 134109</p>
+              <p>#1037, Sector 11</p>
+              <p>Civil Hospital Road, Kharar - 140301</p>
             </div>
 
             <div className="contact-card">
               <div className="contact-icon">
                 <Phone size={24} />
               </div>
-              <h4>Phone Number</h4>
-              <p><a href="tel:9041002165">90410 02165</a></p>
-              <p><a href="tel:01161260809">011 6126 0809</a></p>
+              <h4>Phone Numbers</h4>
+              <p><a href="tel:08288013769">082880 13769</a></p>
+              <p><a href="tel:08288013769">Emergency: 082880 13769</a></p>
             </div>
 
             <div className="contact-card">
@@ -64,16 +64,16 @@ const Contact = () => {
                 <Mail size={24} />
               </div>
               <h4>Email Address</h4>
-              <p><a href="mailto:drrajeshgera@gmail.com">drrajeshgera@gmail.com</a></p>
+              <p><a href="mailto:drkpsclinic@gmail.com">drkpsclinic@gmail.com</a></p>
             </div>
 
             <div className="contact-card">
               <div className="contact-icon">
                 <Clock size={24} />
               </div>
-              <h4>Clinic Timings</h4>
-              <p>Mon - Sat: 5:30 PM - 8:00 PM</p>
-              <p>Sunday: Closed</p>
+              <h4>Working Hours</h4>
+              <p>Mon - Sun: 9 AM - 9 PM</p>
+              <p>All Days Open</p>
             </div>
           </div>
 
@@ -138,7 +138,7 @@ const Contact = () => {
               <div className="map-placeholder">
                 <MapPin size={48} />
                 <p>Interactive Map</p>
-                <span>House No 939, Sector 9, Near Ayush Dispensary, Panchkula</span>
+                <span>#1037, Sector 11, Civil Hospital Road, Kharar</span>
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@ const Contact = () => {
         isOpen={showSuccess}
         onClose={() => setShowSuccess(false)}
         title="Message Sent!"
-        message="Thank you for reaching out to Dr. Gera's Heart and Diabetes Care Centre. We have received your message and will get back to you shortly."
+        message="Thank you for reaching out to Dr. KPS Clinic. We have received your message and will get back to you shortly."
       />
     </section>
   )
